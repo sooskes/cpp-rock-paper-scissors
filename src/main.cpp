@@ -11,6 +11,7 @@
 */
 
 #include <iostream>
+#include <string>
 #include <cstdlib>
 #include <ctime>
 #include <cctype>
@@ -22,11 +23,11 @@ char computer_choice();
 void show_choices(char choice, char computer);
 void round_winner(char player, char computer);
 void point_calculator(char player, char computer, short& computer_point, short& user_point);
-void show_round_stats(short player_rounds_won, short computer_rounds_won, short round_amout);
+void show_round_stats(short player_rounds_won, short computer_rounds_won, short round_amount);
 void show_match_winner(short user_rounds_won, short computer_rounds_won);
 void int_input_validator(short& number_variable);
 bool continuation_permission();
-int close_game();
+void close_game();
 
 int main() {
     // Seed the random number generator once when the program starts.
@@ -48,7 +49,7 @@ int main() {
         do {
             player = player_choice();
             if (player == 'e') {
-                return close_game();
+                close_game();
             }
 
             char computer = computer_choice();
@@ -65,7 +66,9 @@ int main() {
 
     } while (continuation_permission());
 
-    return close_game();
+    close_game();
+
+    return 0;
 } 
 
 char player_choice() {
@@ -381,13 +384,13 @@ bool continuation_permission() {
     return false;
 }
 
-int close_game() {
-    std::cout << "Closing the game.\n"
-              << "Thank you for playing.\n"
-              << "******************************************************************************\n";
+void close_game() {
+    std::cout << "Thank you for playing.\n"
+              << "******************************************************************************\n" 
+              << "Closing the game.\n";
     
-    // Enables the player to read the closing text before executing the exit.
+    // Gives the player time to read the closing message before the program exits.
     std::this_thread::sleep_for(std::chrono::seconds(3));
 
-    return 0;
+    std::exit(0);
 }
