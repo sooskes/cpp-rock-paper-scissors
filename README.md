@@ -4,7 +4,15 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-A console-based Rock Paper Scissors game written in C++.
+A console-based Rock Paper Scissors game written in C++ featuring robust input validation, score tracking, and replay support.
+
+## 📥 Download
+
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-success?style=for-the-badge)](https://github.com/YOUR_USERNAME/cpp-rock-paper-scissors/releases/latest)
+
+Download the latest Windows executable from the latest GitHub Release, or build the project yourself by following the instructions below.
+
+---
 
 ## Table of Contents
 
@@ -12,7 +20,6 @@ A console-based Rock Paper Scissors game written in C++.
 - [Gameplay Preview](#gameplay-preview)
 - [Project Structure](#project-structure)
 - [Building](#building)
-- [Download](#download)
 - [What I Learned](#what-i-learned)
 - [Future Improvements](#future-improvements)
 - [License](#license)
@@ -23,55 +30,55 @@ A console-based Rock Paper Scissors game written in C++.
 
 - 🎮 Classic Rock, Paper, Scissors gameplay
 - ✅ Robust input validation
-- 🔤 Case-insensitive commands
+- 🔤 Case-insensitive input
 - 🏆 Live score tracking
 - 🔁 Replay support
-- 📁 Written as a modular C++ project using multiple functions
+- 📁 Modular C++ program using multiple functions
 
 ---
 
-# Gameplay Preview
+## Gameplay Preview
 
-## Starting a Match
+### Starting a Match
 
-At the beginning of every match, the player selects how many points are required to win. The game validates the input before starting the first round.
+At the beginning of every match, the player chooses how many points are required to win. The game validates the input before starting.
 
 ![Starting a Match](screenshots/start.png)
 
 ---
 
-## Input Validation
+### Input Validation
 
-The game rejects invalid inputs and prompts the player to try again. Inputs are also case-insensitive, allowing entries such as `Rock`, `ROCK`, or `rock`.
+The game rejects invalid inputs and asks the player to try again. Inputs are also case-insensitive, allowing entries such as `Rock`, `ROCK`, or `rock`.
 
-![Input Validation](screenshots/input%20validation.png)
+![Input Validation](screenshots/input-validation.png)
 
 ---
 
-## Gameplay and Score Tracking
+### Gameplay and Score Tracking
 
-Each round displays both the player's and the computer's choices, announces the winner of the round, and updates the scoreboard until one side reaches the required number of points.
+Each round displays the player's and computer's choices, announces the winner of the round, and updates the scoreboard until one side reaches the required number of points.
 
 ![Gameplay](screenshots/stats.png)
 
 ---
 
-## Match Complete
+### Match Complete
 
-Once the required score has been reached, the game announces the winner and allows the player to immediately start another match without restarting the program.
+Once the required score has been reached, the game announces the winner and offers the option to immediately play another match.
 
 ![Victory Screen](screenshots/victory.png)
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```text
 cpp-rock-paper-scissors/
 │
 ├── screenshots/
 │   ├── start.png
-│   ├── input validation.png
+│   ├── input-validation.png
 │   ├── stats.png
 │   └── victory.png
 │
@@ -85,17 +92,17 @@ cpp-rock-paper-scissors/
 
 ---
 
-# Building
+## Building
 
-Compile with g++:
+Compile using g++:
 
 ```bash
 g++ src/main.cpp -o RockPaperScissors
 ```
 
-Run the executable:
-
 ### Windows
+
+Run:
 
 ```bash
 RockPaperScissors.exe
@@ -103,33 +110,34 @@ RockPaperScissors.exe
 
 ### Linux/macOS
 
+Run:
+
 ```bash
 ./RockPaperScissors
 ```
 
 ---
 
-# What I Learned
+## What I Learned
 
-This project gave me hands-on experience with:
+This project helped me practice:
 
-- Function decomposition
 - Input validation
-- References (`&`)
+- Passing variables by reference (`&`)
 - Range-based for loops (for each)
 - Switch statements
-- Clean code organization
 
 ---
 
-# Future Improvements
+## Future Improvements
 
-- Colored console output
-- Match statistics
-- Split the project into multiple source and header files
+- 🎨 Colored console output
+- 📊 Match statistics
+- 📂 Split the project into multiple source and header files
+- 🧩 Object-oriented design
 
 ---
 
-# License
+## License
 
 This project is licensed under the MIT License.
