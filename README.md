@@ -8,7 +8,7 @@ A console-based Rock Paper Scissors game written in C++ featuring robust input v
 
 ## 📥 Download
 
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-success?style=for-the-badge)](https://github.com/YOUR_USERNAME/cpp-rock-paper-scissors/releases/latest)
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-success?style=for-the-badge)](https://github.com/sooskes/cpp-rock-paper-scissors/releases/latest)
 
 Download the latest Windows executable from the latest GitHub Release, or build the project yourself by following the instructions below.
 
