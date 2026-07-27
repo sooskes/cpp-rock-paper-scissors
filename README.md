@@ -37,7 +37,6 @@ Linux/macOS
 
 ## Future Improvements
 
-- Smarter computer opponent
 - Colored console output
 - Statistics
 - Better UI
