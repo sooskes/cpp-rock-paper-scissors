@@ -1,27 +1,33 @@
 # Rock Paper Scissors
 
-A console-based Rock Paper Scissors game written in C++.
+A console-based Rock Paper Scissors game written in modern C++.
 
 ## Features
 
-- Rock, Paper, Scissors gameplay
-- Input validation
-- Case-insensitive commands
+- Case-insensitive input
+- Robust input validation
+- Best-of-N match system
 - Score tracking
-- Replay option
+- Replay support
 
-## Requirements
+## Preview
 
-- C++ compiler
+
+
+## Getting Started
+
+### Requirements
+
 - C++11 or newer
+- g++
 
-## Build
+### Build
 
 ```bash
-g++ main.cpp -o RockPaperScissors
+g++ src/main.cpp -o RockPaperScissors
 ```
 
-## Run
+### Run
 
 Windows
 
@@ -35,8 +41,21 @@ Linux/macOS
 ./RockPaperScissors
 ```
 
+## Project Structure
+
+```
+src/
+    main.cpp
+```
+
+## What I Learned
+
+- Input validation
+- References
+- Switch statements
+- Range-based for loops (for each)
+
 ## Future Improvements
 
-- Colored console output
+- ANSI colors
 - Statistics
-- Better UI
