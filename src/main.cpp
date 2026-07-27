@@ -14,6 +14,8 @@
 #include <cstdlib>
 #include <ctime>
 #include <cctype>
+#include <thread>
+#include <chrono>
 
 char player_choice();
 char computer_choice();
@@ -45,8 +47,12 @@ int main() {
         do {
             player = player_choice();
             if (player == 'e') {
-                std::cout << "You exited the game.\n"
+                std::cout << "Closing the game.\n"
                           << "******************************************************************************\n";
+
+                // Enables the player to read the closing text before executing the exit.
+                std::this_thread::sleep_for(std::chrono::seconds(3));
+
                 return 0;
             }
 
@@ -64,9 +70,12 @@ int main() {
 
     } while (continuation_permission());
 
-    std::cout << "You exited the game.\n"
+    std::cout << "Closing the game.\n"
               << "Thank you for playing.\n"
               << "******************************************************************************\n";
+    
+    // Enables the player to read the closing text before executing the exit.
+    std::this_thread::sleep_for(std::chrono::seconds(3));
 
     return 0;
 } 
