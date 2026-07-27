@@ -26,6 +26,7 @@ void show_round_stats(short player_rounds_won, short computer_rounds_won, short 
 void show_match_winner(short user_rounds_won, short computer_rounds_won);
 void int_input_validator(short& number_variable);
 bool continuation_permission();
+int close_game();
 
 int main() {
     // Seed the random number generator once when the program starts.
@@ -47,13 +48,7 @@ int main() {
         do {
             player = player_choice();
             if (player == 'e') {
-                std::cout << "Closing the game.\n"
-                          << "******************************************************************************\n";
-
-                // Enables the player to read the closing text before executing the exit.
-                std::this_thread::sleep_for(std::chrono::seconds(3));
-
-                return 0;
+                return close_game();
             }
 
             char computer = computer_choice();
@@ -70,14 +65,7 @@ int main() {
 
     } while (continuation_permission());
 
-    std::cout << "Closing the game.\n"
-              << "Thank you for playing.\n"
-              << "******************************************************************************\n";
-    
-    // Enables the player to read the closing text before executing the exit.
-    std::this_thread::sleep_for(std::chrono::seconds(3));
-
-    return 0;
+    return close_game();
 } 
 
 char player_choice() {
@@ -391,4 +379,15 @@ bool continuation_permission() {
     }
     
     return false;
+}
+
+int close_game() {
+    std::cout << "Closing the game.\n"
+              << "Thank you for playing.\n"
+              << "******************************************************************************\n";
+    
+    // Enables the player to read the closing text before executing the exit.
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+
+    return 0;
 }
