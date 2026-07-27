@@ -1,6 +1,21 @@
 # Rock Paper Scissors
 
+![C++](https://img.shields.io/badge/Language-C%2B%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
 A console-based Rock Paper Scissors game written in C++.
+
+## Table of Contents
+
+- [Features](#features)
+- [Gameplay Preview](#gameplay-preview)
+- [Project Structure](#project-structure)
+- [Building](#building)
+- [Download](#download)
+- [What I Learned](#what-i-learned)
+- [Future Improvements](#future-improvements)
+- [License](#license)
 
 ---
 
