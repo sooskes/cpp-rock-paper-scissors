@@ -51,7 +51,7 @@ At the beginning of every match, the player chooses how many points are required
 
 The game rejects invalid inputs and asks the player to try again. Inputs are also case-insensitive, allowing entries such as `Rock`, `ROCK`, or `rock`.
 
-![Input Validation](screenshots/input-validation.png)
+![Input Validation](screenshots/input%20validation.png)
 
 ---
 
